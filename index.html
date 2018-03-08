@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <div class='jumbotron jumbotron-fluid'>
+    <div class='container container-fluid'>
+      <div id="showertimePreset">
+        <!--第一步:开始界面，洗澡时间是叙事的寓言-->
+        <h1>
+        <img src="Title.png" style='height: 50vh; text-align: center; margin: auto' />
+      </h1>
+        <p style="font-size:35px" class="lead">Let water talk</p>
+        <p> </p>
+        <p> </p>
+        <p class="lead">
+          <!--click me的作用：记录当下时间，开始计数-->
+          <a style="background-color:#99ccff; border-color:#99ccff" class="btn btn-primary btn-lg btn-block" href="#" role="button" onclick="startCounting();realTime()">Let water talk</a>
+          <!--<a id="firststep" class="btn btn-primary btn-lg btn-block" href="#" role="button">Click me</a>-->
+        </p>
+      </div>
+      <!--第一部分结束--
+
+    <!--第二部分开始-->
+      <div id="showertimeBegin">
+        <!--记录现在时间 记录timer-->
+        <p id="timenow"></p>
+        <p id="timer"></p>
+        <!--结束计数， 同时跳转解签过程-->
+        <a style="background-color:#99ccff; border-color:#99ccff" onclick="stopCounting(); printNum()" class="btn btn-primary btn-lg btn-block" href="#" role="button">Done showering</a>
+      </div>
+      <!--第二步结束-->
+      <!--第三步开始-->
+      <div>
+        <p> </p>
+        <p id="story"></p>
+        <!--15种寓言答案-->
+      </div>
+      <!--第三步结束-->
+      <script src="sketch.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+  </div>
+</body>
+
+</html>

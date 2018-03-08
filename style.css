@@ -1,0 +1,91 @@
+html, body {
+  background-color: #ffffcc;
+  padding: 0;
+}
+.jumbotron {
+  background-color:#ffffcc !important;
+}
+p, h1,a,#titleName  {
+  font-family: 'Antic Slab', serif;
+  text-align: center;
+
+}
+
+p, a {
+  #test p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#timer, #timenow,#story{
+  font-size:30px;
+}
+.container-fluid {
+  padding-right: 15vw;
+  padding-left: 15vw;
+}
+
+btn-primary, .btn-primary:hover  {
+  border-radius: 0;
+  background-color: #99ccff;
+
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #8b42d7;
+}
+
+.list-group-item.active {
+  background-color: #99ccff;
+  border-color: #99ccff;
+}
+
+.rockingoracle {
+  background-image: url(ask_oracle.jpg);
+  width: 375px;
+  height: 422px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
