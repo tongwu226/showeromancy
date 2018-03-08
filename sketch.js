@@ -36,13 +36,13 @@ function startCounting() {
     showerTime = min * 60;
   }
   var timer = select('#timer');
-  timer.html("You've been showering for" +convertSeconds(showerTime));
+  timer.html("You've been showering for " +convertSeconds(showerTime));
 
   timeInterval = setInterval(timeIt, 1000);
 
   function timeIt() {
     showerTime = floor((millis() / 1000));
-    timer.html("You've been showering for" + convertSeconds(showerTime));
+    timer.html("You've been showering for " + convertSeconds(showerTime));
   }
 }
 
